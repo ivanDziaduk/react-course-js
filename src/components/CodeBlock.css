@@ -1,0 +1,71 @@
+.code-block {
+  background: var(--bg-code);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.code-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27ca40; }
+
+.code-title {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.code-lang {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  background: rgba(88, 166, 255, 0.1);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.code-content {
+  padding: 1.5rem;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.code-content code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  white-space: pre;
+}
+
+/* Подсветка ключевых слов (базовая) */
+.code-content .keyword { color: var(--accent-purple); }
+.code-content .string { color: var(--accent-green); }
+.code-content .comment { color: var(--text-muted); font-style: italic; }
+.code-content .function { color: var(--accent-cyan); }
+
